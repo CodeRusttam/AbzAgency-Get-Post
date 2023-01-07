@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans&family=Roboto:wght@700&display=swap");
+
+@layer base {
+    body{
+        font-family: Nunito;
+        background: #e5e5e5
+    }
+    input{
+      color: #7E7E7E;
+    }
+    input:focus{
+      outline: none
+    }
+}
+.btn {
+  @apply w-24  bg-[#F4E041] p-1 rounded-3xl font-normal text-base leading-6;
+}
+.headers-style{
+  @apply font-normal text-4xl
+}
+.text-style{
+  @apply font-normal text-base text-black;
+}
+.input{
+  @apply w-80 h-11 rounded text-base text-left p-2.5 m-auto mt-6;
+}
+.error-text{
+  @apply text-red-500 w-80 m-auto
+}
+.custom-image {
+  background-image: url('./img/Rectangle\ 29.png');
+}
